@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏体育 · 资料索引与信息整理</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #f8f6f2;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2.5rem 1rem;
+        }
+        .page {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #fffcf8;
+            padding: 2rem 2.4rem 3rem;
+            border-radius: 20px;
+            box-shadow: 0 6px 28px rgba(0,0,0,0.04);
+        }
+        h1, h2, h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            border-left: 5px solid #c4a77d;
+            padding-left: 1rem;
+            color: #2d2a24;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #6b5f4c;
+            margin-bottom: 1.8rem;
+            padding-left: 1rem;
+            border-left: 5px solid #d9c8b0;
+        }
+        .hero {
+            background: #f1ede6;
+            padding: 1.8rem 2rem;
+            border-radius: 24px;
+            margin-bottom: 2.4rem;
+            position: relative;
+        }
+        .hero p {
+            font-size: 1.08rem;
+            color: #3b352c;
+            max-width: 95%;
+        }
+        .hero .quote-inset {
+            background: #fffcf8;
+            border-left: 4px solid #b7a68b;
+            padding: 0.8rem 1.2rem;
+            margin: 1.2rem 0 0.2rem;
+            font-style: normal;
+            color: #4d4435;
+            font-size: 0.98rem;
+            border-radius: 0 12px 12px 0;
+        }
+        .section-card {
+            margin-bottom: 2rem;
+            padding: 0.2rem 0;
+        }
+        .section-card h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid #e2d9cb;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+            color: #3d352a;
+        }
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 0.4rem;
+        }
+        .feature-item {
+            background: #f5f1ea;
+            flex: 1 1 180px;
+            padding: 1rem 1.2rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: all 0.15s;
+        }
+        .feature-item strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: #4a3f30;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #594f3e;
+        }
+        .info-block {
+            background: #f8f4ed;
+            padding: 1.3rem 1.8rem;
+            border-radius: 20px;
+            margin: 1.8rem 0;
+            border: 1px solid #e5dccc;
+        }
+        .info-block p {
+            margin-bottom: 0.6rem;
+        }
+        .faq-mini {
+            margin: 2rem 0 1.8rem;
+        }
+        .faq-mini h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+            color: #3d352a;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5dccc;
+            padding: 0.7rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #4a3f30;
+        }
+        .faq-item span {
+            font-size: 0.96rem;
+            color: #4d4435;
+        }
+        .footnote {
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #d9cebe;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+        .footnote p {
+            font-size: 0.92rem;
+            color: #5c5343;
+        }
+        .footnote a {
+            color: #7f6b4f;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a68b;
+        }
+        .footnote a:hover {
+            color: #4d3f2b;
+            border-bottom: 1px solid #7f6b4f;
+        }
+        /* 响应式细节 */
+        @media (max-width: 640px) {
+            body { padding: 1rem 0.6rem; }
+            .page { padding: 1.5rem 1rem; }
+            h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+            .hero { padding: 1.2rem 1.2rem; }
+            .feature-item { flex: 1 1 100%; }
+            .footnote { flex-direction: column; align-items: flex-start; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.6rem; }
+            .hero p { font-size: 0.98rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区：信息索引概述 -->
+    <div class="hero">
+        <h1>爱游戏体育</h1>
+        <div class="subhead">资料整理 · 信息索引 · 赛事观察</div>
+        <p>从资讯汇编与数据梳理的角度出发，<a href="https://ayx-m-sports.com" style="color:#6b5a41; text-decoration: underline; text-underline-offset:3px; text-decoration-color:#c4a77d;">爱游戏体育</a>聚合了多类体育项目的基础信息、赛事档案与动态摘要，方便爱好者快速建立对运动世界的认知脉络。本页作为一份轻量索引，呈现相关领域的核心内容模块。</p>
+        <div class="quote-inset">
+            “整理不是堆砌，而是让信息呈现自然的秩序。” —— 索引笔记
+        </div>
+    </div>
+
+    <!-- 优势区：资料结构特点 -->
+    <div class="section-card">
+        <h2>资料索引特点</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>分类框架</strong>
+                <p>按运动项目、赛事层级、历史节点划分条目，便于定位与交叉检索。</p>
+            </div>
+            <div class="feature-item">
+                <strong>来源标注</strong>
+                <p>关键数据与引用均保留出处说明，支持回溯与二次验证。</p>
+            </div>
+            <div class="feature-item">
+                <strong>精简摘要</strong>
+                <p>每条记录以短文本呈现核心事实，避免过度解读或冗余渲染。</p>
+            </div>
+            <div class="feature-item">
+                <strong>持续补录</strong>
+                <p>索引随赛季与事件推移而更新，保持信息时效性与覆盖面。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 说明区：整理思路与场景 -->
+    <div class="section-card">
+        <h2>索引构建思路</h2>
+        <p>资料整理工作通常围绕三个环节展开：素材收集、条目提炼、关联组织。就体育领域而言，赛事规则、历史战绩、选手背景、赛季变动等均属于基础信息单元。通过将零散内容按主题归拢，并建立简单的层级链接，能够帮助浏览者更高效地定位所需段落。</p>
+        <div class="info-block">
+            <p><strong>▸ 使用场景举例</strong><br>
+            · 查阅某一联赛的历届冠军与赛制沿革；<br>
+            · 对比不同运动项目的计分体系与场地规格；<br>
+            · 了解近期赛事日程及主要参赛队伍概况。<br>
+            以上需求均可通过索引框架获得初步回答，并进一步引导至更详细的专题页面。</p>
+        </div>
+        <p>值得一提的是，索引本身并非最终结论，而是辅助理解的工具。在<a href="https://ayx-m-sports.com" style="color:#6b5a41; text-decoration: underline; text-underline-offset:3px; text-decoration-color:#c4a77d;">爱游戏体育</a>中，这一类整理逻辑也被用于构建更丰富的知识节点，让体育爱好者在浏览时获得流畅的查询体验。</p>
+    </div>
+
+    <!-- FAQ 摘要区 -->
+    <div class="faq-mini">
+        <h3>常见索引问题 · 简要回答</h3>
+        <div class="faq-item">
+            <strong>Q：资料收录范围包括哪些运动？</strong>
+            <span>涵盖主流团队球类、田径、格斗及部分冬季项目，并持续补充小众运动的基础档案。</span>
+        </div>
+        <div class="faq-item">
+            <strong>Q：索引中的日期和数字可信度如何？</strong>
+            <span>每条数据均标注来源或参考依据，如官方赛季手册、权威统计机构报告，并定期核较。</span>
+        </div>
+        <div class="faq-item">
+            <strong>Q：是否提供历史赛事的完整回顾？</strong>
+            <span>以摘要形式呈现关键年份与转折点，完整回顾可借助站内链接进一步阅读。</span>
+        </div>
+        <div class="faq-item">
+            <strong>Q：页面布局在手机上显示正常吗？</strong>
+            <span>本页采用弹性排版，在手机与平板设备上自动调整间距与字号，保证基本可读性。</span>
+        </div>
+    </div>
+
+    <!-- 底部链接与说明 -->
+    <div class="footnote">
+        <p>内容索引基于公开资料整理 · 仅供信息参考</p>
+        <p>查看更详细条目：<a href="https://ayx-m-sports.com">爱游戏体育</a></p>
+    </div>
+
+</div>
+</body>
+</html>
